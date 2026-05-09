@@ -1,0 +1,239 @@
+@font-face {
+    font-family: Patrick;
+    src: url(FONTY/Patrick_Hand_SC/PatrickHandSC-Regular.ttf);
+}
+@font-face {
+    font-family: Dancing;
+    src: url(FONTY/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+@media (max-width: 600px){
+
+    body{
+        font-size: 1.1em;
+        margin: 10px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .centrowanie{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nastr{
+    display: none;
+    }
+    .galeriamain{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .wyzsze,
+    .nizsze{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria{
+        width: 90%;
+        height: auto;
+    }
+
+    table{
+        font-size: 0.7em;
+    }
+
+    table th,
+    table td{
+        padding: 8px;
+    }
+
+    .tytul{
+        font-size: 1.5em;
+    }
+
+    .kontaktmain{
+        width: 100%;
+    }
+
+    form{
+        width: 95%;
+        padding: 15px;
+    }
+
+    footer{
+        margin: 20px auto 0 auto;
+    }
+}
+body{
+    background: linear-gradient(to bottom, #95cdff 0%, #c7fcff 100%);
+    font-family: Patrick;
+    margin: 2%;
+    width: auto;
+    height: auto;
+    font-size: 2em;
+    color: #1f3b5b;
+}
+header{
+    text-align: center;
+}
+nav{
+    background-color: rgb(75, 60, 114);
+    width: 60%;
+    height: auto;
+    margin: 0 20% 0 20%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    padding: 15px;
+}
+h1, h2{
+    font-family: Dancing;
+}
+main{
+    width: 45%;
+    height: auto;
+}
+aside{
+    width: 45%;
+    height: auto;
+    
+}
+.nastr{
+    border-radius: 20px;
+    height: auto;
+    width: 850px;
+}
+.centrowanie{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(75, 60, 114);
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 0 0 0 auto;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+table{
+    width: 90%;
+    margin: 50px auto;
+    background-color: rgb(144, 129, 182);
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(80, 60, 150, 0.3);
+}
+
+table th{
+    color: white;
+    padding: 14px;
+    background: rgb(75, 60, 114);
+    border: none;
+}
+
+table td{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgb(75, 60, 114);
+    color: white;
+}
+.galeria{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.galeriamain{
+    width: 70%;
+    height: auto;
+    margin: 2% 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px ;
+    background: rgb(144, 129, 182);
+    border-radius: 25px;
+}
+.wyzsze{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nizsze {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.tytul{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.kontaktmain{
+    width: 70%;
+    height: auto;
+    margin: 2% 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, rgb(144, 129, 182), rgb(218, 209, 241));
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(90, 70, 180, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    color: #1f3b5b;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid rgb(75, 60, 114);
+    font-size: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: rgb(75, 60, 114);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
